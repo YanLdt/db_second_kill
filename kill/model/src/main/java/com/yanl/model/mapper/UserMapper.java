@@ -1,14 +1,11 @@
 package com.yanl.model.mapper;
 
 import com.yanl.model.pojo.User;
-import com.yanl.model.pojo.UserExample;
+
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
-    int countByExample(UserExample example);
-
-    int deleteByExample(UserExample example);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -16,13 +13,7 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    List<User> selectByExample(UserExample example);
-
     User selectByPrimaryKey(Integer id);
-
-    int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
-
-    int updateByExample(@Param("record") User record, @Param("example") UserExample example);
 
     int updateByPrimaryKeySelective(User record);
 

@@ -1,14 +1,11 @@
 package com.yanl.model.mapper;
 
 import com.yanl.model.pojo.ItemKill;
-import com.yanl.model.pojo.ItemKillExample;
+
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface ItemKillMapper {
-    int countByExample(ItemKillExample example);
-
-    int deleteByExample(ItemKillExample example);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -16,13 +13,7 @@ public interface ItemKillMapper {
 
     int insertSelective(ItemKill record);
 
-    List<ItemKill> selectByExample(ItemKillExample example);
-
     ItemKill selectByPrimaryKey(Integer id);
-
-    int updateByExampleSelective(@Param("record") ItemKill record, @Param("example") ItemKillExample example);
-
-    int updateByExample(@Param("record") ItemKill record, @Param("example") ItemKillExample example);
 
     int updateByPrimaryKeySelective(ItemKill record);
 
