@@ -64,25 +64,45 @@
 
 
         <!-- 数据表进行生成操作 tableName:表名; domainObjectName:对应的DO -->
-        <table tableName="item" domainObjectName="Item">
+        <table tableName="item" domainObjectName="Item" enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
 
         <!-- 数据表进行生成操作 tableName:表名; domainObjectName:对应的DO -->
-        <table tableName="item_kill" domainObjectName="ItemKill">
+        <table tableName="item_kill" domainObjectName="ItemKill" enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
 
 
-        <table tableName="item_kill_success" domainObjectName="ItemKillSuccess">
+        <table tableName="item_kill_success" domainObjectName="ItemKillSuccess" enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
 
-        <table tableName="user" domainObjectName="User">
+        <table tableName="user" domainObjectName="User" enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
 
-        <table tableName="random_code" domainObjectName="RandomCode">
+        <table tableName="random_code" domainObjectName="RandomCode" enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
 
